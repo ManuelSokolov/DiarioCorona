@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script>
+  window.onload = function () {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Casos por dia desde o primeiro caso"
+    },
+    axisY:{
+      includeZero: false
+    },
+    data: [{
+      type: "line",
+          indexLabelFontSize: 16,
+      dataPoints: [
+           {y:2},
+           {y:2},
+           {y:4},
+           {y:6},
+           {y:9},
+           {y:13},
+           {y:21},
+           {y:30},
+           {y:39},
+           {y:41},
+           {y:59},
+           {y:78},
+           {y:112},
+           {y:169},
+           {y:245},
+           {y:331} ,
+           {y:448},
+           {y:642},
+           {y:785},
+           {y:1020},
+           {y:1280},
+           {y:1600},
+           {y:2060},
+           {y:2362},
+           {y:2995},
+           {y:3554},
+           {y:4268},
+           {y:5170},
+           {y:5962},
+           {y:6408},
+           {y:7443},
+           {y:8251},
+           {y:9034},
+           {y:9886},
+           {y:10524},
+           {y:11278},
+           {y:11730},
+           {y:12442},
+           {y:13141},
+           {y:13956},
+           {y:15472},
+           {y:15987},
+           {y:16585},
+           {y:16934},
+           {y:17448},
+           {y:18091},
+           {y:19049},
+           {y:20863}
+
+      ]
+    }]
+  });
+  chart.render();
+
+  follows('Portugal');
+
+  isHidden();
+  getMode();
+  inicializeAlarms();
+  setInterval(showAlarm, 60000);
+
+  }
+  </script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div id = "headNoticias">
+	<header id="header">
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Portugal</h1>
+
+	</header>
+  <nav id="nav">
+    <button id="follow" type="button" onclick="followCountry('Portugal');">Seguir País <i class="fas fa-star"></i></button>
+    <button id="unfollow" type="button" onclick="unfollowCountry('Portugal');">Deixar de Seguir</button>
+    <a href="home.html">Inicio <i class="fas fa-home"></i></a>
+    <a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+    <a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+  </nav>
+  </div>
+  <div id="container">
+  <div id="left-block-news">
+    <div id ="ocult">
+    <h1 id= "noticiah1"> Morreram mais 21 pessoas em Portugal. Há 20.863 casos confirmados</h1>
+      <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+
+      <img id= "imagemNoticia" src= "IMG/noticia1PT.jpg" alt="mortos" width="500px">
+      <h3> Há 215 pessoas internadas em unidades de cuidados intensivos e 88% dos
+         infectados estão a recuperar em casa. O continente europeu ultrapassou as cem mil mortes em
+          pessoas com covid-19.</h3>
+      <p>Portugal registou no último dia mais 21 mortes de covid-19, aumentando o total para 735 desde o
+        início da pandemia. O país tem um total de 20.863 casos de infecção pelo vírus SARS-CoV-2,
+        mais 657 do que no dia anterior – o que corresponde a uma taxa de crescimento de 3,2%. Os dados
+        foram divulgados nesta segunda-feira no boletim epidemiológico da Direcção-Geral da Saúde (DGS).</p>
+      <p>A taxa de letalidade em Portugal é de 3,5%, e acima dos 70 anos é de 12,8%. O número de recuperados
+        mantém-se inalterado: são 610 — para se ser considerado “curado”, são precisos dois testes negativos.</p>
+      <p>Há 1208 pessoas internadas e 215 em unidades de cuidados intensivos (menos nove do que no domingo).
+        Pessoas em tratamento no domicílio são 87,8% dos casos. A percentagem em internamento é de 5,8%,
+        com 1,8% em cuidados intensivos e 4,8% em enfermaria”, revelou o secretário de Estado da Saúde,
+        António Lacerda Sales, em conferência de imprensa.</p>
+
+        <p id="fonte"> Fonte : Publico - 20/04/2020 </p>
+        <br>
+    <h1 id= ""> Portugal com 928 mortos e 24.027 infetados. Há já 1.357 doentes recuperados</h1>
+        <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+        <img id= "imagemNoticia" src= "IMG/noticias3PT.jpg" alt="enfermeira e idoso" width="500px">
+        <p>Mais 25 mortos por COVID-19 em 24 horas e mais 163 infetados em Portugal.
+           Os números foram divulgados esta segunda-feira no boletim epidemiológico da Direção-Geral da Saúde (DGS).</p>
+        <p>Desde o início da epidemia em Portugal, já se registaram 928 mortes
+          associadas à COVID-19 e 24.027 casos de infeção, segundo o boletim epidemiológico
+           divulgado pela Direção-Geral da Saúde (DGS). Relativamente aos dados de domingo,
+           há um aumento de 25 mortos (crescimento percentual de 2,8%) e de 163 infetados (subida percentual de 0,7%.).
+          Há já 1.357 casos de recuperação, mais 28 que ontem.</p>
+        <p id="fonte"> Fonte : Sapo - 27/04/2020</p><br>
+    </div>
+    <h1 class = "noticiah1"> Como são as vidas de seis recuperados da Covid-19. Estão curados mas mantêm os mesmo cuidados</h1>
+    <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+    <img id= "imagemNoticia" src= "IMG/noticias2PT.jpg" alt="enfermeiro" width="500px">
+    <h3 class = "noticiah3"> Todos superaram a Covid-19 mas, por muito que ouçam falar na possibilidade de se terem tornado
+      imunes ao vírus, mantêm os cuidados de antes. A maioria conta que continua isolada em casa</h3>
+    <p> Manuel é enfermeiro e voluntariou-se para passar a fazer serviço junto dos infetados,
+      mas não arrisca mais e continua a dormir num quarto diferente do da mulher e a manter-se longe das filhas.</p>
+    <p> Sílvia já não passa a vida a limpar a casa com água e lixívia mas ainda não se atreve a reunir-se com o resto
+      da família alargada — nem sequer com os que também foram infetados e já foram dados como recuperados.</p>
+    <p> E se Sara já se permite finalmente brincar com o filho, de 2 anos e meio, sem usar máscara, por outro
+      lado não quer nem ouvir falar em voltar a meter um pé na rua — o que não deixa de ter a sua quota parte de ironia,
+      já que foi precisamente em casa que apanhou o novo coronavírus.</p>
+    <p> Todos tiveram Covid-19 e todos foram dados como recuperados — fazem parte do único valor verde-esperança que
+      consta dos relatórios onde a  Direção-Geral de Saúde vai dando conta da evolução da doença, exatamente aquele
+      que sobe de forma mais lenta e continua, pelo menos para já, a não conseguir suplantar o número negro dos óbitos.</p>
+    <p id="fonte"> Fonte : Observador - 18/04/2020</p>
+  </div>
+  <div id ="rigth-block-news">
+    <div id="chartContainer" style="height: 300px; width: 100%; padding-top:40px;"></div>
+    <p id="subtitlo"> (Deslize sobre o gráfico para ver casos em cada dia)</p>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <section id="news-section">
+      <h3> Estatisticas </h3>
+      <div id="left-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Confirmados</h4>
+          <h5>20863</h5>
+        </div>
+      </div>
+      <div id="center-block-stats" class="inside-stats">
+       <div class="block-inside-stats">
+          <h4>Mortes</h4>
+          <h5 id="ocultNumber">735</h5>
+      </div>
+      </div>
+      <div id="right-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Recuperados</h4>
+          <h5>610</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+</body>
+<footer id="footer">
+  <a href="about-us.html">Sobre Nós</a>
+  <a href="help.html">Ajuda</a>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</html>

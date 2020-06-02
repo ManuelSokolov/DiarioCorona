@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		window.onload = function () {
+			createFollowed();
+			followedHome();
+			getMode();
+			createNotification();
+			loadNotifications();
+			getFilter();
+
+		}
+	</script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<header id="header">
+
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Diário Corona</h1>
+	</header>
+	<nav id="nav">
+		<a href="home.html">Inicio <i class="fas fa-home"></i></a>
+		<a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+		<a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+	</nav>
+	<div id="left-block">
+		<div id="notesDiv">
+
+		</div>
+		<div id="block-search">
+			<div id = "logoCorona">
+				<img src="IMG/logoCorona.jpg" alt="logo">
+			</div>
+			<div id="block-search-inside">
+				<form>
+		  			<input type="text" placeholder="Pesquisar por País" name="search">
+		  			<button onclick="showNews();" type="submit"><i class="fa fa-search"></i></button>
+				</form>
+				<br>
+				<form>
+				<input type="checkbox" id="filter" onclick="noDeaths()">
+  			<label for="checkbox">Ocultar mortos </label><br>
+			</form>
+			</div>
+			<div id="favourites">
+				<h3>Favoritos</h3>
+					<div id="list-favourites">
+						<a href="portugal.html">Portugal</a>
+						<a href="espanha.html">Espanha</a>
+						<a href="italia.html">Italia</a>
+						<a href="eua.html">EUA</a>
+						<a href="china.html">China</a>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="right-block">
+		<div id="block-news">
+			<h2>Noticias Globais</h2>
+			<div id="block-news-inside">
+				<div class="item">
+					<img src="IMG/imgNews1.jpg" id="imgChange">
+				</div>
+				<div id="table-lines">
+					<div class="item" onmouseover="changeImgChi()">
+						<a href="china.html">
+							<h3>China</h3>
+							<p>China sob pressão</p>
+						</a>
+					</div>
+					<div class="item" onmouseover="changeImgPor()">
+						<a href="portugal.html">
+						<h3>Portugal</h3>
+						<p>Mortes em Portugal aumentam</p>
+						</a>
+					</div>
+					<div class="item" onmouseover="changeImgUsa()">
+						<a href="eua.html">
+						<h3>Estados Unidos da America</h3>
+						<p>Madonna usa as redes sociais</p>
+						</a>
+					</div>
+					<div class="item" onmouseover="changeImgSpa()">
+						<a href="espanha.html">
+						<h3>Espanha</h3>
+						<p>Espanha em estado de emergência</p>
+						</a>
+					</div>
+					<div class="item" onmouseover="changeImgIta()">
+						<a href="italia.html">
+						<h3>Italia</h3>
+						<p>Itália ultrapassa os 25 mil mortos</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<a href="about-us.html">Sobre Nós</a>
+		<a href="help.html">Ajuda</a>
+	</footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

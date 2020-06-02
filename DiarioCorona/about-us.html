@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		window.onload = function () {
+			createFollowed(); 
+			getMode(); 
+			setInterval(showAlarm, 60000);
+		}
+	</script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<header id="header">
+		<!--<img id="corona-symbol" src="IMG/corona-symbol.jpg">-->
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Diário Corona</h1>
+	</header>
+	<nav>
+		<a href="home.html">Inicio <i class="fas fa-home"></i></a>
+		<a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+		<a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+	</nav>
+	<section id="container-about-us">
+		<div id="about-us">
+			<h2>Quem Somos?</h2>
+			<div class="grid-top-about-us">
+				<div class="item-about-us">
+					<img src="IMG/fcul.png">
+				</div>
+				<div class="item-about-us">
+					<h3>Faculdade de Ciências da Universidade de Lisboa</h3>
+				</div>
+			</div>
+			<div class="grid-bottom-about-us">
+				<div id="text-about-us">
+					<h4>Curso</h4>
+					<p class="centered">Engenharia Informática</p>
+					<h4>Projeto</h4>
+					<p class="centered">Interfaces Pessoa Máquina 19/20</p>
+					<p class="centered">Projeto A - Corona Virus</p>
+					<h4>A Missão</h4>
+					<p>A Faculdade de Ciências tem como missão expandir os limites do conhecimento científico e tecnológico, transferir esse conhecimento para a sociedade e promover a educação dos seus estudantes através da prática da investigação e desenvolvimento de uma cultura de aprendizagem permanente, valorizando o pensamento crítico e a autonomia intelectual.</p>
+					<h4>Lema</h4>
+					<p>O que hoje não sabemos, amanhã saberemos (Garcia de Orta, 1563).</p>
+				</div>
+				<div id="profile">
+					<div class="item-about-us">
+						<img src="IMG/Pro.jpg" id="pro" onmouseover="showPro()"
+						onmouseout="getToPro()">
+					</div>
+					<div class="item-about-us">
+						<img src="IMG/Soko.jpg" id="soko" onmouseover="showSoko()"
+						onmouseout="getToSoko()">
+					</div>
+					<div class="item-about-us">
+						<img src="IMG/Manso.jpeg" id="manso" onmouseover="showManso()"
+						onmouseout="getToManso()">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<a href="about-us.html">Sobre Nós</a>
+		<a href="help.html">Ajuda</a>
+	</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

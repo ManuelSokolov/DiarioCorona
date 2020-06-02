@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script>
+  window.onload = function () {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Casos por dia desde o primeiro caso"
+    },
+    axisY:{
+      includeZero: false
+    },
+    data: [{
+      type: "line",
+          indexLabelFontSize: 16,
+      dataPoints: [
+           {y:17},
+           {y:34},
+           {y:44},
+           {y:66},
+           {y:114},
+           {y:151},
+           {y:200},
+           {y:237},
+           {y:365},
+           {y:430},
+           {y:589},
+           {y:999},
+           {y:1622},
+           {y:2128},
+           {y:2950},
+           {y:4209} ,
+           {y:5753},
+           {y:7753},
+           {y:9191},
+           {y:11178},
+           {y:13716},
+           {y:17147},
+           {y:19980},
+           {y:24926},
+           {y:28572},
+           {y:33089},
+           {y:39673},
+           {y:47610},
+           {y:56188},
+           {y:64059},
+           {y:72248},
+           {y:78797},
+           {y:85195},
+           {y:94417},
+           {y:102136},
+           {y:110238},
+           {y:117710},
+           {y:124736},
+           {y:130759},
+           {y:135032},
+           {y:140150},
+           {y:146690},
+           {y:152446},
+           {y:157022},
+           {y:161852},
+           {y:166019},
+           {y:169404},
+           {y:177464},
+           {y:182273},
+           {y:191726},
+           {y:195944},
+           {y:200210}
+      ]
+    }]
+  });
+  chart.render();
+
+  follows('Espanha');
+
+  isHidden();
+  getMode();
+  inicializeAlarms();
+  setInterval(showAlarm, 60000);
+
+  }
+  </script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div id = "headNoticias">
+	<header id="header">
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Espanha</h1>
+
+	</header>
+  <nav id="nav">
+    <button id="follow" type="button" onclick="followCountry('Espanha');">Seguir País <i class="fas fa-star"></i></button>
+    <button id="unfollow" type="button" onclick="unfollowCountry('Espanha');">Deixar de Seguir</button>
+    <a href="home.html">Inicio <i class="fas fa-home"></i></a>
+    <a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+    <a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+  </nav>
+  </div>
+  <div id="container">
+  <div id="left-block-news">
+    <div id ="ocult">
+    <h1 id= "noticiah1"> Espanha regista mais 399 mortos e supera os 200 mil infetados por Covid-19</h1>
+      <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+      <h3 id= "noticiah3"> Espanha registou, nas últimas 24 horas, 399 mortes devido ao novo coronavírus,
+         uma descida face ao dia anterior, havendo até agora um total de 20.852 vítimas mortais no país.</h3>
+      <img id= "imagemNoticia" src= "IMG/noticia1ESP.jpg" width="500px" alt="metroEspanha">
+      <p>De acordo com o Ministério da Saúde espanhol, há 4.266 novos infetados - uma ligeira subida relativamente a domingo (2,2%) -,
+        o que eleva o total de pessoas que contraíram a doença para 200.210.</p>
+      <p>Desde o início da pandemia do novo coronavírus, 80.587 pessoas foram consideradas como curadas.</p>
+      <p>A região com mais casos positivos da Covid-19 é a de Madrid, com 56.963 infetados e 7.351 mortos, seguida pela da Catalunha (41.676 e 4.009),
+         a de Castela-Mancha (16.796 e 2.021), a de Castela e Leão (15.857 e 1.493) e a do País Basco (12.628 e 1.081).</p>
+      <p id="fonte"> Fonte : Sic Noticias - 20/04/2020</p>
+    </div>
+        <br>
+    <h1 class = "noticiah1"> Espanha prolonga estado de emergência, mas alivia confinamento das crianças</h1>
+      <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+    <img id= "imagemNoticia" src= "IMG/noticias2ESP.jpg" width="500px" alt="ministro espanhol">
+    <h3 class = "noticiah3"> O Governo espanhol quer alargar o estado de emergência até ao dia 9 de maio, mas os menores poderão sair de casa antes dessa data.
+      Medidas e idade das crianças ainda não estão definidas.</h3>
+    <p> Pedro Sánchez, presidente de Governo de Espanha, vai transmitir aos presidentes das comunidades autónomas
+      a proposta do Governo em alargar o estado de emergência por mais 15 dias, até ao dia 9 de maio. Mas há medidas de confinamento social que vão ser aliviadas,
+       sobretudo no que diz respeito aos menores, cuja realidade poderá vir a ser alterada já a partir de 27 de abril.</p>
+    <p> Ainda não estão definidos os motivos que podem justificar a saída de casa por parte dos menores, bem como as medidas de segurança a adotar.
+      Também não é claro a partir de que idade os menores vão poder sair à rua, mas o ponto de referência,
+       escreve o El País, é a Lei de Saúde Pública (a qual prevê crianças até aos 12 anos).</p>
+    <p id ="fonte"> Fonte : Observador - 18/04/2020 </p>
+
+  </div>
+  <div id ="rigth-block-news">
+    <div id="chartContainer" style="height: 300px; width: 100%; padding-top:40px;"></div>
+    <br>
+    <p id="subtitlo"> (Deslize sobre o gráfico para ver casos em cada dia)</p>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <section id="news-section">
+      <h3> Estatisticas </h3>
+      <div id="left-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Confirmados</h4>
+          <h5>200 210</h5>
+        </div>
+      </div>
+      <div id="center-block-stats" class="inside-stats">
+       <div class="block-inside-stats">
+          <h4>Mortes</h4>
+          <h5 id="ocultNumber">20 852</h5>
+      </div>
+      </div>
+      <div id="right-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Recuperados</h4>
+          <h5>80 587</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+</body>
+<footer id="footer">
+  <a href="about-us.html">Sobre Nós</a>
+  <a href="help.html">Ajuda</a>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</html>

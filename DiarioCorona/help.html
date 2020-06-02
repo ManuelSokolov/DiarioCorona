@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		window.onload = function () {
+			createFollowed();
+			getMode();
+			inicializeAlarms();
+			setInterval(showAlarm, 60000);
+		}
+	</script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<header id="header">
+		<!--<img id="corona-symbol" src="IMG/corona-symbol.jpg">-->
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Diário Corona</h1>
+	</header>
+	<nav id="nav">
+			<a href="home.html">Inicio <i class="fas fa-home"></i></a>
+			<a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+			<a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+	</nav>
+	<section id="container-help">
+		<div id="help">
+			<h2>Ajuda</h2>
+			<h3>Esta página contém varias funcionalidades, carregue na funcionalidade que pretende ajuda:
+      </h3>
+        <p><a href="ajudaPesquisarPais.html">Pesquisar noticias de um pais.</a></p>
+        <p></p>
+				<p><a href="adicionarPaisAFavoritos.html">Adicionar a favoritos.</a></p>
+				<p></p>
+				<p><a href="removerPaisAFavoritos.html">Remover favoritos.</a></p>
+				<p></p>
+				<p><a href="criarNotificacao.html">Criar notificação.</a></p>
+				<p></p>
+        <p><a href="ajudaConfigurarApp.html">Configurar aplicação.</a></p>
+        <p></p>
+        <p><a href="ajudaInfoCovid19.html">Ver informações sobre o COVID-19.</a></p>
+
+
+
+			<h3></h3>
+
+		</div>
+	</section>
+	<footer id="footer">
+		<a href="about-us.html">Sobre Nós</a>
+    <a href="help.html">Ajuda</a>
+	</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

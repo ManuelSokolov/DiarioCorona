@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		window.onload = function () {
+			createFollowed(); 
+			getMode(); 
+			inicializeAlarms();
+			setInterval(showAlarm, 60000);
+		}
+	</script>
+	<title>Diário Corona</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" id="style" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<header id="header">
+		<!--<img id="corona-symbol" src="IMG/corona-symbol.jpg">-->
+		<h1><img id="corona-symbol" src="IMG/logoCorona.jpg">Diário Corona</h1>
+	</header>
+	<nav id="nav">
+		<a href="home.html">Inicio <i class="fas fa-home"></i></a>
+		<a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+		<a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+	</nav>
+	<section id="container-covid19">
+		<div id="left-block-corona" class="inside-blocks">
+			<div class="inside-block-covid-19">
+				<h2>Sintomas</h2>
+				<p>O vírus COVID-19 afeta pessoas diferentes de maneiras diferentes. COVID-19 é uma doença respiratória e a maioria das pessoas infectadas desenvolve sintomas leves a moderados e se recupera sem a necessidade de tratamento especial.</p>
+				<p>Pessoas que têm condições médicas subjacentes e pessoas com mais de 60 anos têm um risco maior de desenvolver doenças graves e morte.</p>
+				<p>Os sintomas comuns incluem:</p>
+				<ul>
+					<li>febre</li>
+					<li>cansaço</li>
+					<li>tosse seca.</li>
+					<li>falta de ar</li>
+					<li>dores de cabeça e dores musculares</li>
+					<li>dor de garganta</li>
+					<li>e muito poucas pessoas relatam diarréia, náusea ou coriza.</li>
+				</ul>
+				<p>Pessoas com sintomas leves que são saudáveis ​​devem se isolar e entrar em contato com seu médico ou uma linha de informações da COVID-19 para obter orientação sobre testes e encaminhamento.</p>
+				<p>Pessoas com febre, tosse ou dificuldade em respirar devem ligar para o médico e procurar atendimento médico.</p>
+				<img src="IMG/synthoms.jpg">
+			</div>
+		</div>
+		<div id="center-block-corona" class="inside-blocks">
+			<div class="inside-block-covid-19">
+				<h2>O Que é?</h2>
+				<p>A doença de coronavírus (COVID-19) é uma doença infecciosa causada por um coronavírus recém-descoberto.</p>
+				<p>A maioria das pessoas infectadas com o vírus irá sentir uma doença respiratória leve a moderada e irá recuperar sem a necessidade de tratamento especial. Os idosos e aqueles com problemas médicos, como doenças cardiovas-culares, diabetes, doenças respiratórias crônicas e câncer, têm mais probabilidade de desenvol-ver doenças graves.</p>
+				<p>A melhor maneira de prevenir e desacelerar a transmissão é estar bem informado sobre o vírus COVID-19, a doença que causa e como se espa-lha. Proteja-se e a outros de infecções lavando as mãos ou usando um esfregão à base de álcool com frequência e sem tocar no rosto.</p>
+				<p>O vírus COVID-19 se espalha principalmente por gotículas de saliva ou secreção nasal quando uma pessoa infectada tosse ou espirra, por isso é importante que pratique etiqueta respiratória (tossindo para o cotovelo flexionado).</p>
+				<p>De momento, não existem vacinas ou tratamen-tos específicos para o COVID-19. Mas, existem muitos ensaios clínicos em andamento ava-liando possíveis tratamentos.</p>
+				<img src="IMG/what.jpg">
+			</div>
+		</div>
+		<div id="right-block-corona" class="inside-blocks">
+			<div class="inside-block-covid-19">
+				<h2>Tratamento</h2>
+				<p>Para impedir a infecção e retardar a transmissão do COVID-19, faça o seguinte:</p>
+				<ul>
+					<li>Lave as mãos regularmente com água e sabão ou limpe-as com álcool.</li>
+					<li>Mantenha pelo menos 1 metro de distância entre você e as pessoas que tossem ou espirram.</li>
+					<li>Evite tocar no seu rosto.</li>
+					<li>Cubra a boca e o nariz ao tossir ou espirrar.</li>
+					<li>Fique em casa se não se sentir bem.</li>
+					<li>Evite fumar e outras atividades que enfraquecem os pulmões.</li>
+					<li>Pratique o distanciamento físico, evitando viagens desnecessárias e afastando-se de grandes grupos de pessoas.</li>
+				</ul>
+				<br>
+				<h3>Tratamento</h3>
+				<p>Atualmente, nenhum medicamento antiviral é recomendado para o tratamento com COVID-19. O tratamento é direcionado ao alívio dos sintomas e pode incluir:</p>
+				<ul>
+					<li>Analgésicos (ibuprofeno ou acetaminofeno)</li>
+					<li>Xarope para tosse ou medicamento</li>
+					<li>Descansar</li>
+					<li>Ingestão de fluidos</li>
+				</ul>
+				<img src="IMG/treatment.jpg">
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<a href="about-us.html">Sobre Nós</a>
+    <a href="help.html">Ajuda</a>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

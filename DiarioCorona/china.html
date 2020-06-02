@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script>
+  window.onload = function () {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title:{
+      text: "Casos por dia desde o primeiro caso"
+    },
+    axisY:{
+      includeZero: false
+    },
+    data: [{
+      type: "line",
+          indexLabelFontSize: 16,
+      dataPoints: [
+           {y:386},
+           {y:526},
+           {y:623},
+           {y:882},
+           {y:1323},
+           {y:1988},
+           {y:2775},
+           {y:4528},
+           {y:5994},
+           {y:7734},
+           {y:9714},
+           {y:11809},
+           {y:14399},
+           {y:17211},
+           {y:20448},
+           {y:24320} ,
+           {y:28047},
+           {y:31207},
+           {y:34625},
+           {y:37232},
+           {y:40206},
+           {y:42696},
+           {y:44724},
+           {y:59865},
+           {y:64201},
+           {y:66559},
+           {y:68566},
+           {y:70618},
+           {y:72508},
+           {y:74258},
+           {y:74652},
+           {y:75543},
+           {y:76369},
+           {y:77016},
+           {y:77234},
+           {y:77749},
+           {y:78159},
+           {y:78598},
+           {y:78927},
+           {y:79355},
+           {y:80134},
+           {y:80261},
+           {y:80308},
+           {y:80497},
+           {y:80667},
+           {y:80768},
+           {y:80814},
+           {y:80856},
+           {y:80954},
+           {y:81063},
+           {y:81086},
+           {y:81130},
+           {y:81229},
+           {y:81281},
+           {y:81346},
+           {y:81484},
+           {y:81553},
+           {y:81631},
+           {y:81733},
+           {y:81827},
+           {y:81946},
+           {y:82059},
+           {y:82157},
+           {y:82241},
+           {y:82295},
+           {y:82395},
+           {y:82465},
+           {y:82527},
+           {y:82575},
+           {y:82615},
+           {y:82760},
+           {y:82799},
+           {y:82845},
+           {y:82897},
+           {y:82903},
+           {y:83001},
+           {y:83070},
+           {y:83760},
+           {y:83799},
+           {y:83845},
+           {y:83897},
+           {y:83903},
+           {y:84001},
+           {y:84070},
+           {y:84140},
+           {y:84208},
+           {y:84287}
+
+      ]
+    }]
+  });
+  chart.render();
+
+  follows('China');
+
+  isHidden();
+  getMode();
+  inicializeAlarms();
+  setInterval(showAlarm, 60000);
+
+  }
+  </script>
+  <title>Diário Corona</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" id="style" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div id = "headNoticias">
+  <header id="header">
+    <h1><img id="corona-symbol" src="IMG/logoCorona.jpg">China</h1>
+
+  </header>
+  <nav id="nav">
+    <button id="follow" type="button" onclick="followCountry('China');">Seguir País <i class="fas fa-star"></i></button>
+    <button id="unfollow" type="button" onclick="unfollowCountry('China');">Deixar de Seguir</button>
+    <a href="home.html">Inicio <i class="fas fa-home"></i></a>
+    <a href="covid-19.html">Covid-19 <i class="fas fa-virus"></i></a>
+    <a href="settings.html">Definições <i class="fas fa-wrench"></i></a>
+  </nav>
+  </div>
+  <div id="container">
+  <div id="left-block-news">
+
+    <h1 id= "noticiah1"> China sob pressão após reabrir mercados de produtos frescos</h1>
+      <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+      <img id= "imagemNoticia" src= "IMG/noticias1CHN.jpg" alt="foto chineses" width="500px">
+      <p>Realizada ao longo do mês de abril, a reabertura dos mercados de produtos frescos da China,
+        conhecidos como wet markets (mercados molhados) é fonte de crescente pressão internacional.
+        Isso porque estudiosos do novo coronavírus acreditam que um destes locais, especificamente o da cidade de Wuhan,
+         foi o ponto de início a pandemia. Além de vegetais, frutas e legumes, essas feiras também vendem carnes e animais vivos,
+         incluindo espécies selvagens. Esses bichos carregam patógenos que podem, eventualmente, migrar para os seres humanos.
+         No caso da Covid-19, a hipótese mais provável é que o coronavírus veio de pangolins, um mamífero de pequeno porte, ou de morcegos.</p>
+         <p id="fonte"> Fonte : Veja - 21/04/2020</p>
+        <br>
+    <div id ="ocult">
+      <h1 id= "noticiah3"> Wuhan faz revisão e aumenta em 50% número de mortos em razão da Covid-19</h1>
+          <p id="verified">Fidelidade: Alta <i class="fas fa-check-circle"></i></p>
+          <img id= "imagemNoticia" src= "IMG/noticia3CHN.jpg" alt="chineses a volta de um globo" width="500px">
+          <p>WUHAN, China —  A cidade chinesa de Wuhan, berço da Covid-19, revisou nesta sexta-feira o número oficial de vítimas
+            fatais em razão da doença, somando mais 1.290 mortes à contagem inicial, um aumento de 50%. A recontagem, que
+            segundo as autoridades corrige "lapsos" na contagem dos casos no início da pandemia,  veio em meio a questionamentos
+            internacionais sobre os dados divulgados pela China e especulações de que poderia tê-los acobertado — algo que Pequim nega com veemência.</p>
+          <p>Com os dados recém-divulgados, o número total de mortos em decorrência da Covid-19 em Wuhan, capital da província de Hubei,
+            passou de 2.579 para 3.869. Isto fez com que o número de mortes registradas na China continental passasse de 3.346 para 4.636, um aumento de quase 40%.
+            Para além dos dados retroativos, o país não registrou nenhuma nova morte em razão do coronavírus nas últimas 24 horas.</p>
+          <p id="fonte"> Fonte : Globo - 17/04/2020</p>
+
+    </div>
+
+
+    <h1 id= "noticiah2"> Noroeste da China tem reincidência de casos de coronavírus</h1>
+        <p id="notVerified">Fidelidade: Baixa <i class="fas fa-times-circle"></i></p>
+        <img id= "imagemNoticia" src= "IMG/noticias2CHN.jpg" alt="chineses a volta de um globo" width="500px">
+        <p>Uma província do noroeste da China que está na linha de frente da batalha do país
+          contra o coronavírus relatou nesta terça-feira (21) seus primeiros casos em quase três semanas,
+           todos envolvendo viajantes do exterior, enquanto as infecções importadas começaram a se estabilizar em outros locais.</p>
+        <p>Como outros países atingidos pela pandemia, a China ordenou restrições rigorosas para recém-chegados, como quarentena obrigatória,
+          além de reduzir os voos internacionais e limitar a entrada de estrangeiros, inclusive viajantes a negócio.</p>
+        <p id="fonte"> Fonte : Globo - 21/04/2020</p>
+
+  </div>
+  <div id ="rigth-block-news">
+    <div id="chartContainer" style="height: 300px; width: 100%; padding-top:40px;"></div>
+    <p id="subtitlo"> (Deslize sobre o gráfico para ver casos em cada dia)</p>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <section id="news-section">
+      <h3> Estatisticas </h3>
+      <div id="left-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Confirmados</h4>
+          <h5>84 287</h5>
+        </div>
+      </div>
+      <div id="center-block-stats" class="inside-stats">
+       <div class="block-inside-stats">
+          <h4>Mortes</h4>
+          <h5 id="ocultNumber">4642</h5>
+      </div>
+      </div>
+      <div id="right-block-stats" class="inside-stats">
+        <div class="block-inside-stats">
+          <h4>Recuperados</h4>
+          <h5>77151</h5>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+</body>
+<footer id="footer">
+  <a href="about-us.html">Sobre Nós</a>
+  <a href="help.html">Ajuda</a>
+</footer>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
